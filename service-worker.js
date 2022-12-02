@@ -18,7 +18,7 @@ workbox.precaching.precacheAndRoute([
 
 workbox.routing.registerRoute(
   ({request}) => request.destination === 'image',//'image' es el dato predeterminado con el que vamos a trabajar
-  new workbox.strategies.CacheFirst()//indica la estartegia a utilizar
+  new workbox.strategies.NetworkFirst()//indica la estartegia a utilizar
 );
 /*
 //Solo lo consulte en cache

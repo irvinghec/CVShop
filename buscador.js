@@ -18,18 +18,20 @@ const filtrar = ()=>{
         let blusasN = inf.nombre.toLowerCase();
         if(blusasC.indexOf(texto) !== -1){
             resultado.innerHTML += `
-            <br><div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="${inf.img}" alt="Card image cap" height="400rem">
-            <div class="card-body">
-                <h5 class="card-title">${inf.nombre}</h5>
-                <p class="card-text">Caracteristicas: ${inf.descripcion}</p>
-                <p class="card-text">Talla: ${inf.talla}</p>
-                <p class="card-text">Color: ${inf.color}</p>
+            <div class="card-group">
+                <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="${inf.img}" alt="Card image cap" height="400rem">
+                <div class="card-body">
+                    <h5 class="card-title">${inf.nombre}</h5>
+                    <p class="card-text">Caracteristicas: ${inf.descripcion}</p>
+                    <p class="card-text">Talla: ${inf.talla}</p>
+                    <p class="card-text">Color: ${inf.color}</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Precio: $${inf.precio}</small>
+                </div>
+                </div>
             </div>
-            <div class="card-footer">
-                <small class="text-muted">Precio: $${inf.precio}</small>
-            </div>
-        </div>
             `;
         }     
         }
