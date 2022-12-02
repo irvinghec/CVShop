@@ -6,7 +6,11 @@ workbox.precaching.precacheAndRoute([
   'offline.html',
   'buscador.html',
   'ropa.json',
-  'icon/offline.png'
+  'icon/offline.png',
+  'css/bootstrap.min.css',
+  'js/bootstrap.min.js',
+  'jquery-3.6.1.min.js',
+  'img/LOGO CV SHOP.png',
 ]);
 
 workbox.routing.registerRoute(
