@@ -58,7 +58,6 @@ const filtrar = ()=>{
         let vestidos = inf.color.toLowerCase(); 
         if(vestidos.indexOf(texto) !== -1){
             resultado.innerHTML += ` 
-            <br>
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="${inf.img}" alt="Card image cap" height="400rem">
                 <div class="card-body">
