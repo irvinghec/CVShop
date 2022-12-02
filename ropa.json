@@ -7,7 +7,7 @@
             "descripcion": "manga corta",
             "color": "azul",
             "talla": "M",
-           "precio": 200
+            "precio": 200
         },
         {
             "img": "img/estampado.jpg",
@@ -23,7 +23,7 @@
             "descripcion": "manga larga",
             "color": "rosa",
             "talla": "G",
-           "precio": 250
+            "precio": 250
         }
     ],
     "pantalones": [
@@ -33,7 +33,7 @@
             "descripcion": "acampanado",
             "color": "azul",
             "talla": "L",
-           "precio": 200
+            "precio": 200
         },
         {
             "img": "img/skinny.jpg",
@@ -49,7 +49,7 @@
             "descripcion": "acampanado",
             "color": "rosa",
             "talla": "S",
-           "precio": 250
+            "precio": 250
         }
     ],
     "vestidos": [
@@ -59,7 +59,7 @@
             "descripcion": "largo",
             "color":"azul",
             "talla":"S",
-          "precio":200
+            "precio":200
         },
         {
             "img": "img/ondulado.jpg",
@@ -75,7 +75,7 @@
             "descripcion": "largo",
             "color": "rosa",
             "talla": "M",
-           "precio": 250
+            "precio": 250
         }
     ]
 
