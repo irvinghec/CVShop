@@ -40,6 +40,7 @@ const filtrar = ()=>{
         let pantalones = inf.color.toLowerCase(); 
         if(pantalones.indexOf(texto) !== -1){
             resultado.innerHTML += `
+            <div class="card-group">
             <br><div class="card" style="width: 18rem;">
             <img class="card-img-top" src="${inf.img}" alt="Card image cap" height="400rem">
             <div class="card-body">
@@ -52,6 +53,7 @@ const filtrar = ()=>{
                 <small class="text-muted">Precio: $${inf.precio}</small>
             </div>
         </div>
+        </div>
             `;
         }     
         }
@@ -60,6 +62,7 @@ const filtrar = ()=>{
         let vestidos = inf.color.toLowerCase(); 
         if(vestidos.indexOf(texto) !== -1){
             resultado.innerHTML += ` 
+            <div class="card-group">
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="${inf.img}" alt="Card image cap" height="400rem">
                 <div class="card-body">
@@ -71,6 +74,7 @@ const filtrar = ()=>{
                 <div class="card-footer">
                     <small class="text-muted">Precio: $${inf.precio}</small>
                 </div>
+            </div>
             </div>
             `;
         }    
