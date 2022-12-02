@@ -80,16 +80,17 @@
 <script type="module" src="archivo.js"></script>
 <script>
   let eventoPrompt;
-  window.addEventListener('beforeinstallprompt', function(e){
-    e.preventDefault();
-    eventoPrompt = e;
-  })
   if(localStorage.getItem("instalado") && localStorage.getItem("instalado") == true)
   {
     btnInstallar.style.display = 'none';
   }
+  window.addEventListener('beforeinstallprompt', function(e){
+    e.preventDefault();
+    eventoPrompt = e;
+  })
   btnInstallar = document.getElementById("instalar");
   btnInstallar.addEventListener('click',(e)=>{
+    btnInstallar.style.display = 'none';
     eventoPrompt.prompt();
     eventoPrompt.userChoice.then((choiceResult)=>{
       if(choiceResult.outcome === 'accepted'){
@@ -97,7 +98,7 @@
         localStorage.setItem('instalado','true');
         localStorage.getItem('instalado');
       }else{
-        console.log('el usuario rechazo la instalacion');
+        console.log('el usuario rechazo la instalación');
         console.log(localStorage.setItem('instalado','false'));
       }
       eventoPrompt=null;
