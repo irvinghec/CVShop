@@ -90,7 +90,6 @@
   }
   btnInstallar = document.getElementById("instalar");
   btnInstallar.addEventListener('click',(e)=>{
-    btnInstallar.style.display = 'none';
     eventoPrompt.prompt();
     eventoPrompt.userChoice.then((choiceResult)=>{
       if(choiceResult.outcome === 'accepted'){
