@@ -38,7 +38,7 @@ workbox.routing.setCatchHandler(async context=>{
     return workbox.precaching.matchPrecache('icon/offline.png');
   }
   else if (context.request.destination === 'document'){
-    return workbox.precaching.matchPrecache('offline.html');
+    return workbox.precaching.matchPrecache('/offline.html');
   }
   //if(event.request.url)
   return Response.error();
