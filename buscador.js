@@ -19,7 +19,7 @@ const filtrar = ()=>{
         if(blusasC.indexOf(texto) !== -1){
             resultado.innerHTML += `
             <br><div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="${inf.img}" alt="Card image cap" height="500rem">
+            <img class="card-img-top" src="${inf.img}" alt="Card image cap" height="400rem">
             <div class="card-body">
                 <h5 class="card-title">${inf.nombre}</h5>
                 <p class="card-text">Caracteristicas: ${inf.descripcion}</p>
@@ -39,7 +39,7 @@ const filtrar = ()=>{
         if(pantalones.indexOf(texto) !== -1){
             resultado.innerHTML += `
             <br><div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="${inf.img}" alt="Card image cap" height="500rem">
+            <img class="card-img-top" src="${inf.img}" alt="Card image cap" height="400rem">
             <div class="card-body">
                 <h5 class="card-title">${inf.nombre}</h5>
                 <p class="card-text">Caracteristicas: ${inf.descripcion}</p>
