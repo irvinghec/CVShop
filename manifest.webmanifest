@@ -44,8 +44,8 @@
             "type": "image/png"
         }
     ],
-    "id":"/cvShop2/index.html",
-    "start_url":"/cvShop2/index.html",
+    "id":"cv-shop.vercel.app",
+    "start_url":"cv-shop.vercel.app",
     "display": "fullscreen",
     "theme_color": "#00aa00",
     "background_color": "#00aa00"
