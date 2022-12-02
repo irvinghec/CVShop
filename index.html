@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.webmanifest">
+    <script src="app.js"></script>
+    <title>CVShop</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <Script src = "jquery-3.6.1.min.js"> </script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #D344E6;">
+    <a class="navbar-brand" href="index.html"><img src="./img/LOGO CV SHOP.png" width="120px" height="50px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="buscador.html">Buscador</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nosotros.html">Nosotros</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!--slider-->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/slider-1.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/slider-2.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/slider-3.jpeg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="py-5 text-center">
+  <a id="instalar" class="btn btn-primary" href="#">Instalar aplicacion</a>
+  <!--<a id="InstalarNotificaciones" class="btn btn-primary" href="#">Recibir notificaciones</a>-->
+</div>
+<!--Card js2-->
+<div class="container">
+  <div class="row" style="padding: 20px;">
+  <h1 class="text-center">Blusas</h1>
+  <div class="card-group" id="blusas"></div>
+  </div>
+  <hr>
+  <div class="row" style="padding: 20px;">
+    <h1 class="text-center" >Pantalones</h1>
+    <div class="card-group" id="pantalones"></div>
+  </div>
+  <hr>
+  <div class="row" style="padding: 20px;">
+    <h1 class="text-center" >Vestidos</h1>
+    <div class="card-group" id="vestidos"></div>
+  </div>
+</div>
+<hr>
+
+<script type="module" src="archivo.js"></script>
+<script>
+  let eventoPrompt;
+  window.addEventListener('beforeinstallprompt', function(e){
+    e.preventDefault();
+    eventoPrompt = e;
+  })
+  if(localStorage.getItem("instalado") && localStorage.getItem("instalado") == true)
+  {
+    btnInstallar.style.display = 'none';
+  }
+  btnInstallar = document.getElementById("instalar");
+  btnInstallar.addEventListener('click',(e)=>{
+    btnInstallar.style.display = 'none';
+    eventoPrompt.prompt();
+    eventoPrompt.userChoice.then((choiceResult)=>{
+      if(choiceResult.outcome === 'accepted'){
+        console.log('el usuario instalo la app');
+        localStorage.setItem('instalado','true');
+        localStorage.getItem('instalado');
+      }else{
+        console.log('el usuario rechazo la instalacion');
+        console.log(localStorage.setItem('instalado','false'));
+      }
+      eventoPrompt=null;
+    });
+  });
+
+  //Notificaciones
+  /*
+  let botonNotificaciones = document.getElementById('InstalarNotificaciones');
+  botonNotificaciones.addEventListener('click', function(e){
+    Notification.requestPermission().then(function(result){
+      if(result==='granted'){
+        randomNotificacion();
+      }
+    });
+  });
+  function randomNotificacion(){
+    let nTitle = "Titulo Notificacion";
+    let nBody = "Te invitamos a conocer nuestro contenido";
+    let nImage = "./img/abierto.jpg";
+    let options = {
+      body: nBody,
+      icon: nImage
+    }
+    let notif = new Notification(nTitle,options);
+    //setTimeout(randomNotificacion,10000);
+  }*/
+
+</script>
+
+</body>
+</html>

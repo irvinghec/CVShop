@@ -1,0 +1,83 @@
+[
+    {
+    "blusas":[
+    {
+            "img": "img/floral.jpg",
+            "nombre": "blusa floral",
+            "descripcion": "manga corta",
+            "color": "azul",
+            "talla": "M",
+           "precio": 200
+        },
+        {
+            "img": "img/estampado.jpg",
+            "nombre": "blusa con estampado",
+            "descripcion": "manga corta",
+            "color": "amarillo",
+            "talla": "M",
+            "precio": 300
+        },
+        {
+            "img": "img/corbatin.jpg",
+            "nombre": "blusa con corbatin",
+            "descripcion": "manga larga",
+            "color": "rosa",
+            "talla": "G",
+           "precio": 250
+        }
+    ],
+    "pantalones": [
+        {
+            "img": "img/avcampanadaoA.jpg",
+            "nombre": "Mesclilla",
+            "descripcion": "acampanado",
+            "color": "azul",
+            "talla": "L",
+           "precio": 200
+        },
+        {
+            "img": "img/skinny.jpg",
+            "nombre": "Mesclilla",
+            "descripcion": "skinny",
+            "color": "Azul",
+            "talla": "G",
+            "precio": 300
+        },
+        {
+            "img": "img/acampanado.jpg",
+            "nombre": "Mesclila",
+            "descripcion": "acampanado",
+            "color": "rosa",
+            "talla": "S",
+           "precio": 250
+        }
+    ],
+    "vestidos": [
+        {
+            "img": "img/abierto.jpg",
+            "nombre": "vestido abertura",
+            "descripcion": "largo",
+            "color":"azul",
+            "talla":"S",
+          "precio":200
+        },
+        {
+            "img": "img/ondulado.jpg",
+            "nombre": "vestido ondulado",
+            "descripcion": "corto",
+            "color": "amarillo",
+            "talla": "G",
+            "precio": 300
+        },
+        {
+            "img": "img/floreado.jpg",
+            "nombre": "vestido floreado",
+            "descripcion": "largo",
+            "color": "rosa",
+            "talla": "M",
+           "precio": 250
+        }
+    ]
+
+}
+]
