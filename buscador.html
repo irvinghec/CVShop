@@ -12,7 +12,7 @@
     <Script src = "jquery-3.6.1.min.js"> </script>
       
 </head>
-<body>
+<body style="background-image: url(img/Fondo.jpg);">
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #D344E6;">
     <a class="navbar-brand" href="index.html"><img src="./img/LOGO CV SHOP.png" width="140px" height="70px"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,20 +32,19 @@
       </ul>
     </div>
   </nav>
-  <div class="container">
+  <div class="container text-white text-center" style="margin-top: 30px; background-color: #F23D63 ; border-radius:20px; padding: 25px;">
     <h1>Buscador por color</h1>
     <input class="form-control mr-sm-2" type="text" placeholder="Search" id="formulario">
+    <br>
     <button class="btn btn-info my-2 my-sm-0"  id="boton">Search</button>
     <br>
   </div>
   <hr>
-    <div class="container">
-      <div class="row">
-        <h1 class="text-center">Resultados</h1>
+    <div class="container" style="background-color: #F23D63 ; border-radius:20px">
+        <h1 class="text-center text-white">Resultados</h1>
         <hr>
-        <div class="card-group" id="resultado">
-
-        </div>
+        <div class="row text-white" id="resultado" >
+          <div class="card-group">
       </div>
     </div>
     <script type="module" src="buscador.js"></script>

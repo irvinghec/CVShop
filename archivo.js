@@ -10,8 +10,8 @@ datos.forEach(element => {
     //console.log(element.blusas);
     for(let i of element.blusas){
         blusas.innerHTML += `
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="${i.img}" alt="Card image cap" height="400rem">
+        <div class="card" style="width: 10rem; margin: 10px; border-radius:10px">
+            <img class="card-img-top" src="${i.img}" alt="Card image cap" height="370rem">
             <div class="card-body">
                 <h5 class="card-title">${i.nombre}</h5>
                 <p class="card-text">Caracateristicas: ${i.descripcion}</p>
@@ -31,8 +31,8 @@ datos.forEach(element => {
     //console.log(element.blusas);
     for(let i of element.pantalones){
         pantalones.innerHTML += `
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="${i.img}" alt="Card image cap" height="400rem">
+        <div class="card" style="width: 10rem; margin: 10px; border-radius:10px">
+            <img class="card-img-top" src="${i.img}" alt="Card image cap" height="370rem">
             <div class="card-body">
                 <h5 class="card-title">${i.nombre}</h5>
                 <p class="card-text">Caracteristicas: ${i.descripcion}</p>
@@ -52,8 +52,8 @@ datos.forEach(element => {
     //console.log(element.blusas);
     for(let i of element.vestidos){
         vestidos.innerHTML += `
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="${i.img}" alt="Card image cap" height="400rem">
+        <div class="card" style="width: 10rem; margin: 10px; border-radius:10px">
+            <img class="card-img-top" src="${i.img}" alt="Card image cap" height="370rem">
             <div class="card-body">
                 <h5 class="card-title">${i.nombre}</h5>
                 <p class="card-text">Caracteristicas: ${i.descripcion}</p>

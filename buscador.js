@@ -18,9 +18,8 @@ const filtrar = ()=>{
         let blusasN = inf.nombre.toLowerCase();
         if(blusasC.indexOf(texto) !== -1){
             resultado.innerHTML += `
-            <div class="card-group">
-                <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="${inf.img}" alt="Card image cap" height="400rem">
+                <div class="card" style="width: 18rem; margin: 10px; border-radius:10px">
+                <img class="card-img-top" src="${inf.img}" alt="Card image cap" height="360rem">
                 <div class="card-body">
                     <h5 class="card-title">${inf.nombre}</h5>
                     <p class="card-text">Caracteristicas: ${inf.descripcion}</p>
@@ -31,7 +30,6 @@ const filtrar = ()=>{
                     <small class="text-muted">Precio: $${inf.precio}</small>
                 </div>
                 </div>
-            </div>
             `;
         }     
         }
@@ -40,9 +38,8 @@ const filtrar = ()=>{
         let pantalones = inf.color.toLowerCase(); 
         if(pantalones.indexOf(texto) !== -1){
             resultado.innerHTML += `
-            <div class="card-group">
-            <br><div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="${inf.img}" alt="Card image cap" height="400rem">
+            <br><div class="card" style="width: 18rem; margin: 10px; border-radius:10px">
+            <img class="card-img-top" src="${inf.img}" alt="Card image cap" height="360rem">
             <div class="card-body">
                 <h5 class="card-title">${inf.nombre}</h5>
                 <p class="card-text">Caracteristicas: ${inf.descripcion}</p>
@@ -53,7 +50,6 @@ const filtrar = ()=>{
                 <small class="text-muted">Precio: $${inf.precio}</small>
             </div>
         </div>
-        </div>
             `;
         }     
         }
@@ -61,10 +57,9 @@ const filtrar = ()=>{
          //console.log(i.blusas);
         let vestidos = inf.color.toLowerCase(); 
         if(vestidos.indexOf(texto) !== -1){
-            resultado.innerHTML += ` 
-            <div class="card-group">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="${inf.img}" alt="Card image cap" height="400rem">
+            resultado.innerHTML += `
+            <div class="card" style="width: 18rem; margin: 10px; border-radius:10px">
+                <img class="card-img-top" src="${inf.img}" alt="Card image cap" height="360rem">
                 <div class="card-body">
                     <h5 class="card-title">${inf.nombre}</h5>
                     <p class="card-text">Caracteristicas: ${inf.descripcion}</p>
@@ -74,7 +69,6 @@ const filtrar = ()=>{
                 <div class="card-footer">
                     <small class="text-muted">Precio: $${inf.precio}</small>
                 </div>
-            </div>
             </div>
             `;
         }    
